@@ -89,7 +89,7 @@ outputsA = np.array ( [inputsA[:, 2]] ).T
 NNN = NeuralNetwork ()
 NNN.train ( inputsA, outputsA )
 
-plot_error ( NNN.epoch_list, NNN.error_history )
+#plot_error ( NNN.epoch_list, NNN.error_history )
 plot_weights ( NNN.epoch_list, NNN.weight_history )
 
 run_test_1 = np.array ( [[1, 1, 1, 0, 0, 1, 0, 1]] )
@@ -97,5 +97,5 @@ run_test_2 = np.array ( [[0, 0, 0, 1, 0, 1, 1, 0]] )
 
 test_run_random(NNN, 10, 5, col)
 
-#Keras_run ( inputsA, outputsA, run_test_1, run_test_2 )
+Keras_run ( inputsA, outputsA, run_test_1, run_test_2 )
 #test_net ( NNN, run_test_1, run_test_2 )
