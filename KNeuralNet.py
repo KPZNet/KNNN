@@ -90,7 +90,7 @@ NNN = NeuralNetwork ()
 NNN.train ( inputsA, outputsA )
 
 #plot_error ( NNN.epoch_list, NNN.error_history )
-plot_weights ( NNN.epoch_list, NNN.weight_history )
+#plot_weights ( NNN.epoch_list, NNN.weight_history )
 
 run_test_1 = np.array ( [[1, 1, 1, 0, 0, 1, 0, 1]] )
 run_test_2 = np.array ( [[0, 0, 0, 1, 0, 1, 1, 0]] )
